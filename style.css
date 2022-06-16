@@ -1,0 +1,253 @@
+:root {
+    --background-color: hsl(0, 100%, 74%);
+    --font-family: 'poppins';
+}
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*mobile */
+@media screen and (max-width:376px) {
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: var(--background-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: var(--font-family);
+        padding: 2em 1em;
+    }
+    main {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 16px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.826);
+        font-family: var(--font-family);
+        font-weight: 700;
+        line-height: 120%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.913);
+        font-family: var(--font-family);
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .sub-text {
+        width: 100%;
+        background-color: hsl(248, 32%, 49%);
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        padding: 1em 4em;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        box-shadow: 0 5px 1px 1px hsla(0, 0%, 50%, 0.390);
+    }
+    .form-container{
+        background-color: #fff;
+        width: 100%;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: 0 5px 1px 1px hsla(0, 0%, 50%, 0.390);
+    }
+    
+    .reg-form input {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        font-family: var(--font-family);
+        color: #222;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        margin: 1em 0;
+    }
+    .reg-form input:focus {
+        border: 1px hsl(249, 10%, 26%);
+        outline: none;
+        border-style: solid;
+        }
+    .reg-form ::placeholder {
+        font-size: 10px;
+        font-weight: 600;
+        padding-left: 10px;
+        color: hsl(249, 10%, 26%);
+    }
+    .reg-form  input:required:focus {
+        background-image: url(/images/icon-error.svg);
+        background-position:right;
+        background-size: 4%;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        outline: none;
+        border: 1px solid hsl(0, 100%, 74%);
+    }
+    .reg-form input[type="submit"]{
+        background: hsl(154, 59%, 51%);
+        color: #fff;
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: 10px;
+        font-weight: 500;
+        opacity: .7;
+        border: 1px solid;
+        border-radius: 4px;
+        transition: opacity .3s ease;
+    }
+    .reg-form input[type="submit"], .Login-form input[type="submit"]:hover{
+        opacity: 1;
+    }
+    .form-container p {
+        font-size: 8px;
+        color: hsl(246, 25%, 77%);
+        text-align: center;
+    }
+    .form-container a {
+        font-size: 8px;
+        font-weight: 700;
+        font-family: var(--font-family);
+        text-align: center;
+        color: hsl(0, 100%, 74%);
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width:1440px) and (min-width: 376px){
+    body {
+        background-image: url(/images/bg-intro-desktop.png);
+        background-color: var(--background-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: var(--font-family);
+        padding: 2em;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .row {
+        display: flex;
+    }
+    .col-right {
+        flex: 50%;
+    }
+    .col-left {
+        flex: 50%;
+        padding-top: 8rem;
+    }
+    h1 {
+        font-size: 35px;
+        color: rgba(255, 255, 255, 0.826);
+        font-family: var(--font-family);
+        font-weight: 700;
+        line-height: 120%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.913);
+        font-family: var(--font-family);
+        font-weight: 400;
+    }
+    
+    .sub-text {
+        width: 100%;
+        background-color: hsl(248, 32%, 49%);
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        padding: 1em 1em;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        box-shadow: 0 5px 1px 1px hsla(0, 0%, 50%, 0.390);
+    }
+    .form-container{
+        background-color: #fff;
+        width: 100%;
+        padding: 2em;
+        border-radius: 5px;
+        box-shadow: 0 5px 1px 1px hsla(0, 0%, 50%, 0.390);
+    }
+    
+    .reg-form input {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        font-family: var(--font-family);
+        color: #222;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        margin: 1em 0;
+    }
+    .reg-form input:focus {
+        border: 1px hsl(249, 10%, 26%);
+        outline: none;
+        border-style: solid;
+        }
+    .reg-form ::placeholder {
+        font-size: 10px;
+        font-weight: 600;
+        padding-left: 10px;
+        color: hsl(249, 10%, 26%);
+    }
+    .reg-form  input:required:focus {
+        background-image: url(/images/icon-error.svg);
+        background-position:right;
+        background-size: 4%;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        outline: none;
+        border: 1px solid hsl(0, 100%, 74%);
+    }
+
+    .reg-form input[type="submit"]{
+        background: hsl(154, 59%, 51%);
+        color: #fff;
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 500;
+        opacity: .7;
+        border: 1px solid;
+        border-radius: 4px;
+        transition: opacity .3s ease;
+    }
+    .reg-form input[type="submit"], .Login-form input[type="submit"]:hover{
+        opacity: 1;
+    }
+    .form-container p {
+        font-size: 10px;
+        color: hsl(246, 25%, 77%);
+        text-align: center;
+    }
+    .form-container a {
+        font-size: 10px;
+        font-weight: 700;
+        font-family: var(--font-family);
+        color: hsl(0, 100%, 74%);
+        text-decoration: none;
+    }
+}
